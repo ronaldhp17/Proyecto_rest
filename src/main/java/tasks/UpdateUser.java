@@ -25,7 +25,7 @@ public class UpdateUser implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         try {
-            TimeUnit.SECONDS.sleep(120);
+            TimeUnit.SECONDS.sleep(60);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

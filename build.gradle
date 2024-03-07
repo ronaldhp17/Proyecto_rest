@@ -7,9 +7,13 @@ apply plugin: 'application'
 apply plugin: 'java-library'
 apply plugin: 'jacoco'
 apply plugin: 'maven-publish'
-apply plugin: 'net.serenity-bdd.aggregator'
-apply plugin: 'idea'
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
+apply plugin: "org.sonarqube"
 
+compileJava {
+    sourceCompatibility = '11'
+    targetCompatibility = '11'
+}
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 def versionSerenity='4.0.12'
@@ -26,17 +30,19 @@ repositories {
 
 buildscript {
     repositories {
-        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
-        classpath "net.serenity-bdd:serenity-gradle-plugin:2.3.8"
+        classpath "net.serenity-bdd:serenity-gradle-plugin:4.0.12"
+        classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:4.4.1.3373")
     }
 }
 
 dependencies {
 
     //DEPENDENCIAS DE SERENITY - TECNOLOGIAS WEB
-    implementation "io.cucumber:cucumber-java:${versionCucumber}"
     implementation "net.serenity-bdd:serenity-cucumber:${versionCucumber}"
     implementation "io.cucumber:datatable:${versionCucumber}"
     implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
@@ -49,6 +55,9 @@ dependencies {
     implementation "net.serenity-bdd:serenity-ensure:${versionSerenity}"
     implementation 'org.mockito:mockito-core:3.12.4'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    implementation 'net.serenity-bdd:serenity-screenplay-rest:4.0.18'
+    // implementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
+
 
     //DEPENDECIAS DE UTILIDADES
     implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
@@ -68,8 +77,8 @@ dependencies {
     implementation group: 'org.apache.cxf', name: 'cxf-rt-frontend-jaxws', version: "${versionApacheCXF}"
     implementation group: 'org.json', name: 'json', version: '20210307'
     implementation group: 'com.jayway.jsonpath', name: 'json-path', version: '2.6.0'
-    implementation 'net.serenity-bdd:serenity-screenplay-rest:4.0.18'
 
+    implementation group: 'com.opencsv', name: 'opencsv', version: '5.5.2'
 
     implementation group: 'com.oracle.database.jdbc', name: 'ojdbc8', version: '21.3.0.0'
     implementation group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
@@ -78,12 +87,14 @@ dependencies {
     implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.0-alpha5'
     implementation group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.0-alpha5'
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.18.0'
-    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
 
     //LIBRERIAS CHOUCAIR
     implementation(group: 'com.choucair', name: 'libreria', version: '1.0.1')
+
 }
+
 test {
     useJUnit {
         include "**/*";
