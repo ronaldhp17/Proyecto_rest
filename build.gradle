@@ -8,10 +8,6 @@ apply plugin: 'java-library'
 apply plugin: 'jacoco'
 apply plugin: 'maven-publish'
 
-compileJava {
-    sourceCompatibility = '11'
-    targetCompatibility = '11'
-}
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 def versionSerenity='4.0.12'
