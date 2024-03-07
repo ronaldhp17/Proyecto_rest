@@ -1,0 +1,17 @@
+
+g	java:S112 "FDefine and throw a dedicated exception instead of using a generic one.(“В“йь€€€€8”свћб1
+{
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(д†єА8ясвћб1
+M
+java:S1128"+Remove this unused import 'utils.Constant'.(ЕњмЇэ€€€€8яхЈѕб1
+d
+java:S1128
+"GRemove this unused import 'org.assertj.core.api.Assertions.assertThat'.(кЋќу8яхЈѕб1
+b
+java:S1128"@Remove this unused import 'utils.Constant.VALUE_CREATE_EMPLOYE'.(ҐЉ ™ш€€€€8яхЈѕб1
+]
+java:S1128"@Remove this unused import 'utils.Constant.VALUE_UPDATE_EMPLOYE'.(™яжи8яхЈѕб1
+`
+java:S1128"CRemove this unused import 'utils.enums.RestService.CREATE_EMPLOYE'.(ц€кТ8ахЈѕб1
+`
+java:S1128"CRemove this unused import 'utils.enums.RestService.UPDATE_EMPLOYE'.(Е—г 8ахЈѕб1
