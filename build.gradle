@@ -10,7 +10,7 @@ apply plugin: 'maven-publish'
 
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
-def versionSerenity='4.0.12'
+def versionSerenity='4.0.11'
 def versionApachePoi='5.2.2'
 def versionApacheCXF='3.4.4'
 def versionCucumber='4.0.12'
