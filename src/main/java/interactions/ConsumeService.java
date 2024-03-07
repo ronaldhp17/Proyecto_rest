@@ -1,9 +1,6 @@
 package interactions;
 
-import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.Actor;
 
 public class ConsumeService {
 
