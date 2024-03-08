@@ -38,7 +38,7 @@ dependencies {
     implementation "io.cucumber:datatable:${versionCucumber}"
     implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
     testImplementation "io.cucumber:cucumber-junit:${versionCucumber}"
-    implementation "net.serenity-bdd:serenity-screenplay:${versionSerenity}"
+    implementation 'net.serenity-bdd:serenity-screenplay:4.0.8'
     implementation "net.serenity-bdd:serenity-screenplay-webdriver:${versionSerenity}"
     implementation "net.serenity-bdd:serenity-junit:${versionSerenity}"
     implementation "net.serenity-bdd:serenity-core:${versionSerenity}"
