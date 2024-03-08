@@ -2,10 +2,8 @@ group = "co.com.choucair.services.dummyapi"
 version '1.0'
 apply plugin: 'groovy'
 apply plugin: 'java'
-apply plugin: 'eclipse'
 apply plugin: 'application'
 apply plugin: 'java-library'
-apply plugin: 'jacoco'
 apply plugin: 'maven-publish'
 apply plugin: 'net.serenity-bdd.aggregator'
 
