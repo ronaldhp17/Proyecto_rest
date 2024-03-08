@@ -4,7 +4,6 @@ import interactions.ConsumeService;
 import models.ModelToDummyapi;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 
 import java.util.concurrent.TimeUnit;
@@ -20,7 +19,6 @@ public class UpdateUser implements Task {
     public static UpdateUser with(ModelToDummyapi modelToDummyapi) {
         return Instrumented.instanceOf(UpdateUser.class).withProperties(modelToDummyapi);
     }
-
 
     @Override
     public <T extends Actor> void performAs(T actor) {

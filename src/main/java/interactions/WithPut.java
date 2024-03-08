@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.rest.interactions.Put;
 import static utils.enums.RestService.UPDATE_EMPLOYE;
 
 public class WithPut implements Interaction {
-    public String body;
+    private String body;
 
     public WithPut(String body) {
         this.body = body;

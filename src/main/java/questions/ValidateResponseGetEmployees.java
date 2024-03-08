@@ -4,16 +4,15 @@ import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
+public class ValidateResponseGetEmployees implements Question<Boolean> {
+    private final String valueSearch;
 
-public class ValidateResponsePut implements Question<Boolean> {
-    private String valueSearch;
-
-    public ValidateResponsePut(String valueSearch) {
+    public ValidateResponseGetEmployees(String valueSearch) {
         this.valueSearch = valueSearch;
     }
 
-    public static ValidateResponsePut is(String valueSearch) {
-        return new ValidateResponsePut(valueSearch);
+    public static ValidateResponseGetEmployees is(String valueSearch) {
+        return new ValidateResponseGetEmployees(valueSearch);
     }
 
     @Override

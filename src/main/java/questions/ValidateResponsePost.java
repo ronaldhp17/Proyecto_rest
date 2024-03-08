@@ -3,30 +3,21 @@ package questions;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.rest.questions.LastResponse;
-import utils.Constant;
-
-import java.util.concurrent.TimeUnit;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static utils.Constant.VALUE_CREATE_EMPLOYE;
-import static utils.enums.RestService.CREATE_EMPLOYE;
 
 public class ValidateResponsePost implements Question<Boolean> {
-    private int code;
+    private String valueSearch;
 
-    public ValidateResponsePost(int code) {
-        this.code = code;
+    public ValidateResponsePost(String valueSearch) {
+        this.valueSearch = valueSearch;
     }
 
-    public static ValidateResponsePost is(int code) {
-        return new ValidateResponsePost(code);
+    public static ValidateResponsePost is(String valueSearch) {
+        return new ValidateResponsePost(valueSearch);
     }
-
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        int response = SerenityRest.lastResponse().statusCode();
-        return response == code;
+        String response = SerenityRest.lastResponse().body().asString();
+        return response.contains(valueSearch);
     }
 }
