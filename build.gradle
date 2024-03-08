@@ -1,5 +1,4 @@
-group = "co.com.choucair.services.dummyapi"
-version = '1.0'
+group  "co.com.choucair.services.dummyapi"
 version '1.0'
 apply plugin: 'java'
 apply plugin: 'eclipse'
