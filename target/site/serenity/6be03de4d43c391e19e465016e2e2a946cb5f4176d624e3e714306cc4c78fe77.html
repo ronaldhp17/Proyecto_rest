@@ -65,7 +65,7 @@
 <link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
 <!--CHART.JS-->
 <script src="chartjs/chart.js"></script>
-<script src="chartjs/chartjs-plugin-datalabels@2.0.0.min.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
 <script src="chartjs/patternomaly.min.js"></script>
 <script>
     // Register the plugin to all charts:
@@ -115,7 +115,7 @@
                     search: ""
                 },
                 columnDefs: [
-                    {type: 'time-elapsed-dhms', targets: 5}
+                    {type: 'time-elapsed-dhms', targets: 4}
                 ]
             })
             $("#manual-scenario-results").DataTable({
@@ -199,7 +199,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 07-03-2024 02:18:23</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 08-03-2024 13:34:39</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -217,8 +217,7 @@
                                     5 tests
 
                                      |
-                                        <a href="results.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
-                                                                                        title="Download CSV"></i></a>
+                                        <a href="results.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down" title="Download CSV"></i></a>
 
 
                                 </div>
@@ -256,14 +255,14 @@
                                                             <canvas id="severityChart" height="200px"></canvas>
                                                         </div>
                                                     </div>
-                                                        <div class="col-lg-4 col-md-6 col-sm-9">
-                                                            <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
+                                                    <div class="col-lg-4 col-md-6 col-sm-9">
+                                                        <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
 
-                                                            <!-- Duration bar chart -->
-                                                            <div class="chart-container">
-                                                                <canvas id="durationChart" height="200px"></canvas>
-                                                            </div>
+                                                        <!-- Duration bar chart -->
+                                                        <div class="chart-container">
+                                                            <canvas id="durationChart" height="200px"></canvas>
                                                         </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="container-fluid">
@@ -290,48 +289,48 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>mar 07, 2024 02:18:21</td>
+                    <td>mar. 08, 2024 13:34:38</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>mar 07, 2024 02:18:22</td>
+                    <td>mar. 08, 2024 13:34:38</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>373ms</td>
+                    <td>315ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>11ms</td>
+                    <td>3ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>83ms</td>
+                    <td>50ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>29ms</td>
+                    <td>13ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>146ms</td>
+                    <td>68ms</td>
                 </tr>
                 </tbody>
             </table>
@@ -369,7 +368,7 @@
                                                                 <tbody>
                                                                     <tr>
                                                                         <td class="failure-color top-list-title">
-                                                                            <a href="35fe942d64c7d76c1ef7675d88727521bf9d64bab519abdb8caa71bceab42f45.html">Automation of dummyapi</a>
+                                                                            <a href="23673dbc0a7dddedc30455d89b1b6cce1cdb7baf9bd805e7916f1f61f8b7b88e.html">Automation of dummyapi</a>
                                                                         </td>
                                                                         <td>
                                                                             <span class="badge failure-badge">100%</span>
@@ -401,7 +400,7 @@
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>373ms</td>
+                    <td>315ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -411,7 +410,7 @@
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>11ms</td>
+                    <td>3ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -422,40 +421,39 @@
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>83ms</td>
+                    <td>50ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>mar 07, 2024 02:18:21</td>
+                    <td>mar. 08, 2024 13:34:38</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>29ms</td>
+                    <td>13ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>mar 07, 2024 02:18:22</td>
+                    <td>mar. 08, 2024 13:34:38</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>146ms</td>
+                    <td>68ms</td>
                 </tr>
                 </tbody>
             </table>
         </div>
     </div>
 
-                                                        <h3><i class="bi bi-gear"></i> Automated Scenarios</h3>
+                                                        <h3><i class="bi bi-gear"></i> Automated Tests</h3>
 
-                                                            <table class="scenario-result-table table"
-                                                                   id="scenario-results">
+                                                            <table class="scenario-result-table table" id="scenario-results">
                                                                 <thead>
                                                                 <tr>
                                                                     <th>feature</th>
@@ -468,86 +466,66 @@
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                    <tr class="scenario-result ERROR">
-                                                                        <td>
-                                                                                <a href="#">Automation of dummyapi</a>
-                                                                        </td>
-                                                                        <td data-order="Get employee">
-                                                                                    <a href="fbc9bccfd4c3ea75be0b41c471e5e3f43f12d69c3da3bef033f5d2f4827f7ea3.html">Get employee</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>2</td>
-                                                                        <td data-order="1709795901">02:18:21</td>
-                                                                        <td>083ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span
-                                                                                    style="display:none">ERROR</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result ERROR">
-                                                                        <td>
-                                                                                <a href="#">Automation of dummyapi</a>
-                                                                        </td>
-                                                                        <td data-order="Get employe by id">
-                                                                                    <a href="9d0c969b4f61f326427754a09fdf8a51ae8a09858a114569160afe5216047bf1.html">Get employe by id</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>2</td>
-                                                                        <td data-order="1709795902">02:18:22</td>
-                                                                        <td>018ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span
-                                                                                    style="display:none">ERROR</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result ERROR">
-                                                                        <td>
-                                                                                <a href="#">Automation of dummyapi</a>
-                                                                        </td>
-                                                                        <td data-order="Create a employe">
-                                                                                    <a href="40768607b40ac8321f2260409da19004385277c1721a40e5584acfa56edfd5f7.html">Create a employe</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>2</td>
-                                                                        <td data-order="1709795902">02:18:22</td>
-                                                                        <td>019ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span
-                                                                                    style="display:none">ERROR</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result ERROR">
-                                                                        <td>
-                                                                                <a href="#">Automation of dummyapi</a>
-                                                                        </td>
-                                                                        <td data-order="Update user with put method">
-                                                                                    <a href="dfb513a81c1561ce92aac184a2bd38aeae67edc7313aa4ede9ea58835b8c41b7.html">Update user with put method</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>2</td>
-                                                                        <td data-order="1709795902">02:18:22</td>
-                                                                        <td>011ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span
-                                                                                    style="display:none">ERROR</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result ERROR">
-                                                                        <td>
-                                                                                <a href="#">Automation of dummyapi</a>
-                                                                        </td>
-                                                                        <td data-order="Delete an user">
-                                                                                    <a href="3547de8326ff6cb72dc7da04f544a0009a1337c7cab273169b376b7d91242ba2.html">Delete an user</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>2</td>
-                                                                        <td data-order="1709795902">02:18:22</td>
-                                                                        <td>015ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span
-                                                                                    style="display:none">ERROR</span>
-                                                                        </td>
-                                                                    </tr>
+                                                                        <tr class="scenario-result ERROR">
+                                                                            <td>
+                                                                                    <a href="#">Automation of dummyapi</a>
+                                                                            </td>
+                                                                            <td><a href="fbc9bccfd4c3ea75be0b41c471e5e3f43f12d69c3da3bef033f5d2f4827f7ea3.html">Get employee</a></td>
+                                                                            <td><span style="display:none"></span> </td>
+                                                                            <td>2</td>
+                                                                            <td>13:34:38</td>
+                                                                            <td>050ms</td>
+                                                                            <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span style="display:none">ERROR</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="scenario-result ERROR">
+                                                                            <td>
+                                                                                    <a href="#">Automation of dummyapi</a>
+                                                                            </td>
+                                                                            <td><a href="9d0c969b4f61f326427754a09fdf8a51ae8a09858a114569160afe5216047bf1.html">Get employe by id</a></td>
+                                                                            <td><span style="display:none"></span> </td>
+                                                                            <td>2</td>
+                                                                            <td>13:34:38</td>
+                                                                            <td>005ms</td>
+                                                                            <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span style="display:none">ERROR</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="scenario-result ERROR">
+                                                                            <td>
+                                                                                    <a href="#">Automation of dummyapi</a>
+                                                                            </td>
+                                                                            <td><a href="40768607b40ac8321f2260409da19004385277c1721a40e5584acfa56edfd5f7.html">Create a employe</a></td>
+                                                                            <td><span style="display:none"></span> </td>
+                                                                            <td>2</td>
+                                                                            <td>13:34:38</td>
+                                                                            <td>003ms</td>
+                                                                            <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span style="display:none">ERROR</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="scenario-result ERROR">
+                                                                            <td>
+                                                                                    <a href="#">Automation of dummyapi</a>
+                                                                            </td>
+                                                                            <td><a href="dfb513a81c1561ce92aac184a2bd38aeae67edc7313aa4ede9ea58835b8c41b7.html">Update user with put method</a></td>
+                                                                            <td><span style="display:none"></span> </td>
+                                                                            <td>2</td>
+                                                                            <td>13:34:38</td>
+                                                                            <td>005ms</td>
+                                                                            <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span style="display:none">ERROR</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="scenario-result ERROR">
+                                                                            <td>
+                                                                                    <a href="#">Automation of dummyapi</a>
+                                                                            </td>
+                                                                            <td><a href="3547de8326ff6cb72dc7da04f544a0009a1337c7cab273169b376b7d91242ba2.html">Delete an user</a></td>
+                                                                            <td><span style="display:none"></span> </td>
+                                                                            <td>2</td>
+                                                                            <td>13:34:38</td>
+                                                                            <td>005ms</td>
+                                                                            <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span style="display:none">ERROR</span>
+                                                                            </td>
+                                                                        </tr>
                                                                 </tbody>
                                                             </table>
 
@@ -582,7 +560,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <span class="version">Serenity BDD version 4.0.46</span>
+            <span class="version">Serenity BDD version 3.9.8</span>
         </div>
     </div>
 </div>

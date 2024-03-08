@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Automation of dummyapi","Get employee","ERROR","2024-03-08T13:34:38.4074269-05:00[America/Bogota]","0.0","0.05"
+"Automation of dummyapi","Get employe by id","ERROR","2024-03-08T13:34:38.6190401-05:00[America/Bogota]","0.0","0.01"
+"Automation of dummyapi","Create a employe","ERROR","2024-03-08T13:34:38.6627755-05:00[America/Bogota]","0.0","0.0"
+"Automation of dummyapi","Update user with put method","ERROR","2024-03-08T13:34:38.6903697-05:00[America/Bogota]","0.0","0.01"
+"Automation of dummyapi","Delete an user","ERROR","2024-03-08T13:34:38.7183732-05:00[America/Bogota]","0.0","0.01"

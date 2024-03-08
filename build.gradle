@@ -1,4 +1,5 @@
 group  "co.com.choucair.services.dummyapi"
+defaultTasks 'clear', 'test', 'aggregate'
 version '1.0'
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -110,3 +111,5 @@ test {
         systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
     }
 }
+gradle.startParameter.continueOnFailure = true
+test.finalizedBy(aggregate)
