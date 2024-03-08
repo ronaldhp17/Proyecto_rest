@@ -1,15 +1,5 @@
 group  "co.com.choucair.services.dummyapi"
 defaultTasks 'clear', 'test', 'aggregate'
-version '1.0'
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'application'
-apply plugin: 'java-library'
-apply plugin: 'jacoco'
-apply plugin: 'maven-publish'
-
-sourceCompatibility = '11'
-targetCompatibility = '11'
 
 version '1.0'
 apply plugin: 'groovy'
