@@ -29,7 +29,6 @@ public class StepdefinitionsRestDummyapi {
 
     @Then("employees are displayed")
     public void employeesAreDisplayed() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(60);
         assertThat(SerenityRest.lastResponse().statusCode()).isEqualTo(VALUE_GET_EMPLOYEES);
     }
 
@@ -41,7 +40,6 @@ public class StepdefinitionsRestDummyapi {
 
     @Then("the employ is displayed")
     public void theEmployIsDisplayed() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(60);
         assertThat(SerenityRest.lastResponse().statusCode()).isEqualTo(VALUE_GET_EMPLOYE);
     }
 
@@ -73,7 +71,6 @@ public class StepdefinitionsRestDummyapi {
 
     @Then("i should see success deleted")
     public void iShouldSeeSuccessDeleted() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(60);
         assertThat(SerenityRest.lastResponse().statusCode()).isEqualTo(VALUE_DELETE_EMPLOYE);
     }
 }

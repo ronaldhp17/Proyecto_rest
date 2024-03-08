@@ -26,11 +26,6 @@ public class ValidateResponsePost implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        try {
-            TimeUnit.SECONDS.sleep(60);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         int response = SerenityRest.lastResponse().statusCode();
         return response == code;
     }
