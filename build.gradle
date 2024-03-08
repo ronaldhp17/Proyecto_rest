@@ -1,17 +1,22 @@
 group = "co.com.choucair.services.dummyapi"
+version = '1.0'
 version '1.0'
-apply plugin: 'groovy'
 apply plugin: 'java'
+apply plugin: 'eclipse'
 apply plugin: 'application'
 apply plugin: 'java-library'
+apply plugin: 'jacoco'
 apply plugin: 'maven-publish'
+
+sourceCompatibility = '11'
+targetCompatibility = '11'
 
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
-def versionSerenity='4.0.11'
-def versionApachePoi='5.2.2'
-def versionApacheCXF='3.4.4'
-def versionCucumber='4.0.12'
+def versionSerenity = '4.0.11'
+def versionApachePoi = '5.2.2'
+def versionApacheCXF = '3.4.4'
+def versionCucumber = '4.0.12'
 
 repositories {
     mavenCentral()
